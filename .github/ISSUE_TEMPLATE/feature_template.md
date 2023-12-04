@@ -1,8 +1,8 @@
 ---
 name: Feature Request
 about: 機能リクエスト用のテンプレート
-title: "[FEATURE]"
-labels: enhancement
+title: ""
+labels:
 assignees: ''
 
 ---
