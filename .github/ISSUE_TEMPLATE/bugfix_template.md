@@ -1,8 +1,8 @@
 ---
 name: Bugfix
 about: バグフィックス用のテンプレート
-title: "[BUG-FIX]"
-labels: bugfix
+title: ""
+labels:
 assignees: ''
 
 ---
