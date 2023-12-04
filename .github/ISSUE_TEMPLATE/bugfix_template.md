@@ -2,7 +2,7 @@
 name: Feature Request
 about: バグフィックス用のテンプレート
 title: "[BUG-FIX]"
-labels: 
+labels: bugfix
 assignees: ''
 
 ---
