@@ -1,15 +1,13 @@
-name: Issue Status Check
+name: Project Card Status Check
 
 on:
-  issues:
-    types: [labeled, unlabeled, opened, edited, closed, reopened, assigned, unassigned, milestoned, demilestoned, commented]
-  issue_comment:
-    types: [created, edited, deleted]
+  project_card:
+    types: [created, deleted, moved]
 
 jobs:
-  check-status:
+  check-project-card-status:
     runs-on: ubuntu-latest
     steps:
-    - name: Check Issue Status
-      run: |
-        echo "Issue status changed"
+      - name: Check Project Card Status
+        run: |
+          echo "Issue status changed"
