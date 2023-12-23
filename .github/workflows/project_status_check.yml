@@ -1,13 +1,15 @@
-name: Project Card Status Check
+name: Issue Activity
 
 on:
-  project_card:
-    types: [created, deleted, moved]
+  issues:
+    types: [opened, edited, closed, reopened]
+  issue_comment:
+    types: [created, edited, deleted]
 
 jobs:
-  check-project-card-status:
+  issue-activity:
     runs-on: ubuntu-latest
     steps:
-      - name: Check Project Card Status
+      - name: Trigger on Issue Activity
         run: |
-          echo "Issue status changed"
+          echo "An issue was updated or a comment was made"
