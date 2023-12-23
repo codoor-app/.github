@@ -1,4 +1,4 @@
-name: Project Card Status Check
+name: Test Student Card Status Check
 
 on:
   project_card:
