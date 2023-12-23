@@ -1,1 +1,15 @@
+name: Issue Status Check
 
+on:
+  issues:
+    types: [labeled, unlabeled, opened, edited, closed, reopened, assigned, unassigned, milestoned, demilestoned, commented]
+  issue_comment:
+    types: [created, edited, deleted]
+
+jobs:
+  check-status:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check Issue Status
+      run: |
+        echo "Issue status changed"
